@@ -7,7 +7,7 @@ This file is part of the Innovation LAB - Offline Bot.
 
 
 define({    
-    chatServerURL : "http://localhost:4500/chatDialogflowAPI",
+    chatServerURL : "./chatDialogflowAPI",
 	accessToken:"123445",
     applicationTitle: "Quote & Buy",
     userTitle : "Me",
