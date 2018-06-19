@@ -280,7 +280,7 @@ html,body{
 .list-group-item-text-user {
  line-height : 1.4;
  color : #4d4c4c;
- font-size : 15px;
+ font-size : 12px;
  overflow-wrap : break-word;
  background-color: #e8f4f9;
  border-radius : 10px 0px 10px 10px;
@@ -297,7 +297,7 @@ html,body{
 
  line-height : 1.4;
  color : #4d4c4c;
- font-size : 15px;
+ font-size : 12px;
  overflow-wrap : break-word;
  background-color: #fff;
  border : 1px solid #dddddd;
@@ -609,7 +609,7 @@ img.center {
  padding : 0;
  font-family: Roboto;
  line-height: normal;
- font-size : 24px;
+ font-size : 12px;
  font-weight: 400;
  text-align : left;
  margin : inherit;
