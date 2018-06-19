@@ -7,7 +7,7 @@ This file is part of the Innovation LAB - Offline Bot.
 
 
 define({    
-    chatServerURL : "https://qbback.herokuapp.com:3000/chatDialogflowAPI",
+    chatServerURL : "https://localhost:4500/chatDialogflowAPI",
 	accessToken:"123445",
     applicationTitle: "Quote & Buy",
     userTitle : "Me",

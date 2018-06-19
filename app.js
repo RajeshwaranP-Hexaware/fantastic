@@ -37,12 +37,12 @@ app.get('/', function (req, res) {
 	res.redirect("/index.html");
 });
 
-app.post('/dialogflowAPI', function (req, res) {
+app.post('/chatDialogflowAPI', function (req, res) {
 	var options = {
 		method: 'POST',
-		url: config.dialogflowAPI,
+		url: 'https://api.api.ai/v1/query?v=20150910',
 		headers: {
-			"Authorization": "Bearer " + config.accessToken
+			"Authorization": "Bearer aa3c4bf166e14cdbaa1d46d3a3fbe4b4"
 		},
 		body: req.body,
 		json: true
