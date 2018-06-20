@@ -61,7 +61,8 @@ app.post('/chatDialogflowAPI', function (req, res) {
 				
 				let riskClass = body.result.parameters && body.result.parameters.RiskClass ? body.result.parameters.RiskClass : null;
 				console.log('YEAH', riskClass, body.result.parameters);
-				if(riskClass){
+				res.json(body).end();
+				/*if(riskClass){
 
 					var options = {
 						method: 'POST',
@@ -84,7 +85,7 @@ app.post('/chatDialogflowAPI', function (req, res) {
 					});					
 				} else {
 					res.json(body).end();
-				}
+				}*/
 			} 
 			else{
 				res.json(body).end();
