@@ -798,6 +798,7 @@ iframe#_hjRemoteVarsFrame {
 .searchBx {
   width: inherit;
   background-color: #fcfcfc;
+  min-width: 348px;
 }
 
 .w800 {
