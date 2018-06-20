@@ -48,6 +48,7 @@ app.post('/chatDialogflowAPI', function (req, res) {
 		json: true
 	};
 	request(options, function (error, response, body) {
+		console.log('ERROR ',error);
 		if (error) {
 			res.json({ error: "error in chat server api call" }).end();
 		} else {
