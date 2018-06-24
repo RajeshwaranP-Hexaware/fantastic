@@ -182,6 +182,23 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 			e.preventDefault();
 		});
 
+		$(document).on('click', '.close-icon-expand', function (r) {
+			if($('.chat-body').hasClass('chatHight')){
+				$('.chat-body').removeClass('chatHight');
+				$('.chat-body').addClass('chatWindowHight');
+			} else {
+				$('.chat-body').removeClass('chatWindowHight');
+				$('.chat-body').addClass('chatHight');
+			}
+			$(".maxi").toggleClass("hidden");
+      		$(".mini").toggleClass("hidden");
+		});
+
+		$(document).on('click', '.newclass', function(r){
+			$('.chat-body').removeClass('chatHight');
+			$('.chat-body').addClass('chatWindowHight');
+		});
+
 		$(document).on('click', '.multiple-click', function (r) {
 
 			$('.apiMultipleQuickreplybtnPayload').hide();

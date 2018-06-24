@@ -8,8 +8,8 @@ This file is part of the Innovation LAB - Offline Bot.
 html,body{
  height : 100%;
  overflow-y: hidden;
-
 }
+
 .main-container{
  background-color: #fff;
  /* height:100%; */
@@ -23,7 +23,6 @@ html,body{
 }
 
 .chat-body {
-  height : 390px !important;
   overflow-y : auto;
   background-color: #fff;
   display : block;
@@ -830,4 +829,12 @@ iframe#_hjRemoteVarsFrame {
   position: absolute;
   top: 11px;
   right: 16px;
+}
+
+.chatHight {
+  height: 0px !important;
+}
+
+.chatWindowHight {
+  height: 390px !important;
 }

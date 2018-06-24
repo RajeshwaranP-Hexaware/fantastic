@@ -139,7 +139,7 @@
     </div>
 
     <div class="row no-scroll-x">
-      <div class="col-xs-12 chat-body scrollbar scrollbar-style">
+      <div class="col-xs-12 chat-body scrollbar scrollbar-style chatHight">
         <!-- <div class="chat-text-para col-xs-offset-4 col-xs-4 chat-welcome-message">
           <img class="img-responsive" style="border-radius:5px;border:5px solid white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0);margin-top:10%;"
            src="./avatar/macy.svg" />
@@ -193,9 +193,10 @@
       $(".chatPopup").removeClass("w800");
     });
 
-    $(".close-icon-close").click(function () {
-			$('div div .chat-body').css('height', '0px');
-    });
+    // $(".close-icon-close").click(function () {
+    //   console.log('LoGG', $(".close-icon-close"))
+    //   $('div div .chat-body').css('height', '0px');
+    // });
       
     $('.close-icon-expand').click(function () {
       $(".chatPopup").toggleClass("w800");
