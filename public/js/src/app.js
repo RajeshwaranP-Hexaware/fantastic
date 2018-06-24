@@ -154,6 +154,11 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 			e.preventDefault();
 		});
 
+		$(".close-icon-close").click(function () {
+			alert('daii', $('.chat-body'));
+			$('div div .chat-body').css('height', '0px');
+		  });
+
 		$(document).on('click', '.btn-testing', function (e) {
 			$(this).css('background-color', 'green');
 			$(this).removeClass('btn-testing');
