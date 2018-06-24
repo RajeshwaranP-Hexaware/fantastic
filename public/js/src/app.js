@@ -199,11 +199,13 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 		});
 
 		$(document).on('click', '.newclass', function(r){
-			$('.chat-body').removeClass('chatHight');
-			$('.chat-body').addClass('chatWindowHight');
+			if($('.chat-body').hasClass('chatHight')){
+				$('.chat-body').removeClass('chatHight');
+				$('.chat-body').addClass('chatWindowHight');
 
-			$(".maxi").toggleClass("hidden");
-      		$(".mini").toggleClass("hidden");
+				$(".maxi").toggleClass("hidden");
+				$(".mini").toggleClass("hidden");
+			}
 		});
 
 		$(document).on('click', '.multiple-click', function (r) {
