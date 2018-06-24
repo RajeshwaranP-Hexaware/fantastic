@@ -193,7 +193,10 @@
       $(".chatPopup").removeClass("w800");
     });
 
-  
+    $(".close-icon-close").click(function () {
+			$('div div .chat-body').css('height', '0px');
+    });
+      
     $('.close-icon-expand').click(function () {
       $(".chatPopup").toggleClass("w800");
       $(".emoji-wysiwyg-editor").toggleClass("w90");
