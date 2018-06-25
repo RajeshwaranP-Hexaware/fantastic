@@ -811,9 +811,8 @@ iframe#_hjRemoteVarsFrame {
 }
 
 .searchBx {
-  width: inherit;
   background-color: #fcfcfc;
-  min-width: 348px;
+  min-width: 380px;
 }
 
 .w800 {
@@ -837,4 +836,10 @@ iframe#_hjRemoteVarsFrame {
 
 .chatWindowHight {
   height: 401px !important;
+}
+
+.bodyClass {
+  position:fixed;
+  bottom :0px; 
+  width: 380px
 }
