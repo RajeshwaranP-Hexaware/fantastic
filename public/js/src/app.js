@@ -184,23 +184,14 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 
 		$(document).on('click', '.close-icon-expand', function (r) {
 			if($('.chat-body').hasClass('chatHight')){
-				//$('.chat-body').slideDown('fast', function(){
-					$('.chat-body').removeClass('chatHight');
-					$('.chat-body').addClass('chatWindowHight');
-				//});
+				$('.chat-body').removeClass('chatHight');
+				$('.chat-body').addClass('chatWindowHight');
 			} else {
-				//$('.chat-body').slideUp('fast', function(){
-					$('.chat-body').removeClass('chatWindowHight');
-					$('.chat-body').addClass('chatHight');
-				//});
+				$('.chat-body').removeClass('chatWindowHight');
+				$('.chat-body').addClass('chatHight');
 			}
-			if($('.maxi').hasClass("hidden")){
-				$(".maxi").removeClass("hidden");
-      			$(".mini").addClass("hidden");
-			} else{
-				$(".mini").removeClass("hidden");
-				$(".maxi").addClass("hidden");
-			}
+			$(".maxi").toggleClass("hidden");
+			$(".mini").toggleClass("hidden");
 		});
 
 		$(document).on('click', '.newclass', function(r){
@@ -208,8 +199,8 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				$('.chat-body').removeClass('chatHight');
 				$('.chat-body').addClass('chatWindowHight');
 
-				$(".mini").removeClass("hidden");
-      			$(".maxi").addClass("hidden");
+				$(".maxi").toggleClass("hidden");
+				$(".mini").toggleClass("hidden");
 			}
 		});
 
