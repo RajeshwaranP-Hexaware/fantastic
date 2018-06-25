@@ -194,7 +194,6 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 					$('.chat-body').addClass('chatHight');
 				//});
 			}
-			alert($('.maxi').hasClass("hidden"))
 			if($('.maxi').hasClass("hidden")){
 				$(".maxi").removeClass("hidden");
       			$(".mini").addClass("hidden");
