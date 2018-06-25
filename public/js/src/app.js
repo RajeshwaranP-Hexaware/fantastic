@@ -194,8 +194,14 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 					$('.chat-body').addClass('chatHight');
 				//});
 			}
-			$(".maxi").toggleClass("hidden");
-      		$(".mini").toggleClass("hidden");
+			alert($('.maxi').hasClass("hidden"))
+			if($('.maxi').hasClass("hidden")){
+				$(".maxi").removeClass("hidden");
+      			$(".mini").addClass("hidden");
+			} else{
+				$(".mini").removeClass("hidden");
+				$(".maxi").addClass("hidden");
+			}
 		});
 
 		$(document).on('click', '.newclass', function(r){
@@ -203,8 +209,8 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				$('.chat-body').removeClass('chatHight');
 				$('.chat-body').addClass('chatWindowHight');
 
-				$(".maxi").toggleClass("hidden");
-				$(".mini").toggleClass("hidden");
+				$(".mini").removeClass("hidden");
+      			$(".maxi").addClass("hidden");
 			}
 		});
 

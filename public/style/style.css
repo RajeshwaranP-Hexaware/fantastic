@@ -638,7 +638,7 @@ img.center {
 .close-icon-expand {
  margin-top : inherit;
  margin-left : inherit;
- margin-right: 15px;
+ margin-right: 0px;
  float : right;
  cursor : pointer;
  visibility : inherit;
@@ -836,5 +836,5 @@ iframe#_hjRemoteVarsFrame {
 }
 
 .chatWindowHight {
-  height: 390px !important;
+  height: 401px !important;
 }
