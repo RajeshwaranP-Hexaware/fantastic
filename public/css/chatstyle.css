@@ -393,3 +393,10 @@ float : left;
  margin : 5% 0% -2% 0px !important;
  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0)
 }
+
+.imgimg {
+  width: 32px;
+  height: 32px;
+  background: url("../avatar/macy.svg");
+  background-size: cover;
+}
