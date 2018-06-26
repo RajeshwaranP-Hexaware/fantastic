@@ -190,8 +190,8 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				$('.chat-body').removeClass('chatWindowHight');
 				$('.chat-body').addClass('chatHight');
 			}
-			$(".maxi").toggleClass("hidden");
-			$(".mini").toggleClass("hidden");
+			// $(".maxi").toggleClass("hidden");
+			// $(".mini").toggleClass("hidden");
 		});
 
 		$(document).on('click', '.newclass', function(r){
@@ -199,8 +199,8 @@ define(['jquery', 'settings', 'apiService', 'utils'], function ($, config, apiSe
 				$('.chat-body').removeClass('chatHight');
 				$('.chat-body').addClass('chatWindowHight');
 
-				$(".maxi").toggleClass("hidden");
-				$(".mini").toggleClass("hidden");
+				// $(".maxi").toggleClass("hidden");
+				// $(".mini").toggleClass("hidden");
 			}
 		});
 
