@@ -135,7 +135,7 @@ img.emoji {
 
 .emoji-menu {
  position : absolute;
- right : 0;
+ left : 0;
  z-index : 999;
  margin-top : -215px;
  margin-right : 39px;
